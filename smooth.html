@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carousel with Days</title>
+ <!--Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="smooth.css" rel="stylesheet">
+</head>
+<body>
+ <!-- Carousel container -->
+ <div class="carousel-container">
+  <div class="carousel-item day1 --active" onclick="goToState(1)">Day 1</div>
+  <div class="carousel-item day2" onclick="goToState(2)">Day 2</div>
+  <div class="carousel-item day3" onclick="goToState(3)">Day 3</div>
+</div>
+<!-- Navigation Buttons -->
+<div class="controls">
+  <button class="prevBtn" onclick="previous()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+  <button class="nextBtn" onclick="next()"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+</div>
+
+<!-- Text Display -->
+<div class="text-display" id="text-display">
+  <!-- Day 1 Container-->
+  <div class="Days Day-1 --active">
+     <h4 class = "days-h4">Day 1</h4>
+    <h5 class = "days-h5">Arrival, Welcome Circle, Yoga Nidra Session</h5>
+
+   <ul>  
+      <li>
+         <strong>12:00pm</strong> – For <strong>Early Arrivals </strong><br>Feel free to arrive early and begin your relaxation. Store your bags at reception, book a massage or explore the beautiful grounds, beach, or lagoon pool. The restaurant, spa and changing rooms are also accessible.<br>
+       </li>
+     
+      <li>
+      <strong>3:00pm</strong> – <strong>Official Retreat Start</strong><br>Meet at the lobby for check-in and room allocation. Take a moment to settle into your luxurious accommodation and soak up the surrounds.<br>
+       </li> 
+     
+        <li>
+         <strong>4:30pm</strong> – <strong>Welcome Circle &amp; Intention Setting</strong><br>Join us for the opening circle. Enjoy a glass of bubbly or kombucha and healthy nibbles as we mingle and chat and get to know each other. During the welcome circle we will set our intentions for the retreat and practice a simple meditation.<br>
+      </li>  
+   <span class ="more">
+       <li>
+       <strong>6pm</strong> – <strong>Yoga Nidra workshop</strong><br>
+       </li>
+
+       <li>
+         <strong>7:00pm</strong> – <strong>Dinner at Azure- the Resort Restaurant</strong><br>Share a delicious meal with your new Art of Flow retreat friends onsite. Early night to feel revived for day 2!
+        </li>
+     </span>
+    </ul>
+    
+    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+            <button class = "readmore" onclick="readmore()" id="myBtn">Read more</button>
+  </div>
+  
+    <!-- Day 2 Container-->
+       <div class="Days Day-2 --active">
+     <h4 class = "days-h4">Day 2</h4>
+    <h5 class = "days-h5">Morning yoga, chakra workshop, lighthouse walk</h5>
+
+  <ul> 
+<li>
+<strong>7:00-8:00am</strong> – <strong>Beachfront Yoga</strong><br>Awaken your body with a rejuvenating yoga session overlooking the Pacific Ocean.</li>  <li>
+<strong>8:00am</strong> – <strong>Breakfast</strong><br>Indulge in a nourishing breakfast to start the day<br>
+</li> 
+<li>
+<strong>9:30-10:30am - Free time</strong><br>Take this hour to laze over breakfast, journal, swim, explore, or just unwind with the breathtaking views. You may also book a massage for deep relaxation.<br>
+</li>
+    <span class = "more">
+<li>
+<strong>10.30-12:30pm</strong> – <strong>Chakra Workshop</strong><br>Identify and balance your 7 chakras in this exploratory workshop. We will take some refreshment breaks throughout.<br>
+</li> 
+<li>
+<strong>12:30pm- 1:00pm - Breathwork session</strong><br>
+</li> 
+<li>
+<strong>1-2.30pm</strong> – <strong>Lunch Break</strong>
+</li>  
+<li>
+<strong>2:30-4.30pm</strong> – <strong>Lighthouse Walk Excursion</strong><br>Embark on a scenic walk to the iconic Byron Bay Lighthouse and soak in the panoramic views.</li> 
+<li>
+<strong>4.30pm </strong>– <strong>&nbsp;Free Time</strong><br>Return to our retreat centre and relax and unwind before dinner<br><br><strong>7:00pm</strong> – <strong>Dinner out in Byron Bay</strong><br>Enjoy another fabulous healthy inspired meal with your new retreat friends.</li>
+    </span>
+</ul>
+    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+            <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+  </div>
+      <!-- Day 3 Container-->
+     <div class="Days Day-3 --active">
+     <h4 class = "days-h4">Day 3</h4>
+    <h5 class = "days-h5">Sunrise yoga, watercolour session, closing circle, video testimonials</h5>
+
+<ul>
+<li>
+<strong>7:00-8:00am</strong> – <strong>Beachfront Yoga</strong><br>Start the day refreshed with a morning yoga session by the ocean.</li>
+<li>
+<strong>8:00am</strong> – <strong>Breakfast</strong><br>A delightful breakfast awaits to fuel your day. Enjoy a relaxing morning before departing, with check-out at 11am.</li>
+<li>
+<strong>11:00am </strong>-<strong> Official check out</strong><br>Bring bags to store at reception and then join us whilst we continue on with some activities.</li> 
+<li>
+ <span class = "more">
+<strong>11:00-12.30pm</strong> –<strong> Watercolor &amp; Affirmations Workshop</strong><br>Connect with your inner creativity and express your affirmations through a mindful watercolor painting session. Guided meditation included<strong>.</strong>
+</li>
+<li>
+<strong>12.30-1.30pm</strong> – Video testimonials. A chance to share your experiences on camera so others are inspired to join us next time!</li> 
+<li>
+<strong>1.30pm</strong> – <strong>Closing circle &amp; Retreat end.</strong><br>Reflect on your experiences during the retreat, share insights, and say goodbye to newfound friends.</li>
+  </span>
+</ul>
+    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+            <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+  </div>
+
+<script src = "smooth.js"></script>
+
+</body>
+</html>
