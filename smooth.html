@@ -13,108 +13,652 @@
 </head>
 <body>
  <!-- Carousel container -->
- <div class="carousel-container">
-  <div class="carousel-item day1 --active" onclick="goToState(1)">Day 1</div>
-  <div class="carousel-item day2" onclick="goToState(2)">Day 2</div>
-  <div class="carousel-item day3" onclick="goToState(3)">Day 3</div>
-</div>
-<!-- Navigation Buttons -->
-<div class="controls">
-  <button class="prevBtn" onclick="previous()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
-  <button class="nextBtn" onclick="next()"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
-</div>
-
-<!-- Text Display -->
-<div class="text-display" id="text-display">
-  <!-- Day 1 Container-->
-  <div class="Days Day-1 --active">
-     <h4 class = "days-h4">Day 1</h4>
-    <h5 class = "days-h5">Arrival, Welcome Circle, Yoga Nidra Session</h5>
-
-   <ul>  
-      <li>
-         <strong>12:00pm</strong> – For <strong>Early Arrivals </strong><br>Feel free to arrive early and begin your relaxation. Store your bags at reception, book a massage or explore the beautiful grounds, beach, or lagoon pool. The restaurant, spa and changing rooms are also accessible.<br>
-       </li>
-     
-      <li>
-      <strong>3:00pm</strong> – <strong>Official Retreat Start</strong><br>Meet at the lobby for check-in and room allocation. Take a moment to settle into your luxurious accommodation and soak up the surrounds.<br>
-       </li> 
-     
-        <li>
-         <strong>4:30pm</strong> – <strong>Welcome Circle &amp; Intention Setting</strong><br>Join us for the opening circle. Enjoy a glass of bubbly or kombucha and healthy nibbles as we mingle and chat and get to know each other. During the welcome circle we will set our intentions for the retreat and practice a simple meditation.<br>
-      </li>  
-   <span class ="more">
-       <li>
-       <strong>6pm</strong> – <strong>Yoga Nidra workshop</strong><br>
-       </li>
-
-       <li>
-         <strong>7:00pm</strong> – <strong>Dinner at Azure- the Resort Restaurant</strong><br>Share a delicious meal with your new Art of Flow retreat friends onsite. Early night to feel revived for day 2!
-        </li>
-     </span>
-    </ul>
+  <!-- Carousel container -->
+  <section class="desktop-view">
+    <div class="carousel-container">
+     <div class="carousel-item day1 --active" onclick="goToState(1)"></div>
+     <div class="carousel-item day2" onclick="goToState(2)"><p>Day 2<p></div>
+     <div class="carousel-item day3" onclick="goToState(3)"><p>Day 3<p></div>
+      <div class="carousel-item day4" onclick="goToState(4)"><p>Day 4<p></div>
+      <div class="carousel-item day5" onclick="goToState(5)"><p>Day 5<p></div>
+       <div class="carousel-item day6" onclick="goToState(6)"><p>Day 6<p></div>
     
-    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
-            <button class = "readmore" onclick="readmore()" id="myBtn">Read more</button>
-  </div>
-  
-    <!-- Day 2 Container-->
-       <div class="Days Day-2 --active">
-     <h4 class = "days-h4">Day 2</h4>
-    <h5 class = "days-h5">Morning yoga, chakra workshop, lighthouse walk</h5>
-
-  <ul> 
-<li>
-<strong>7:00-8:00am</strong> – <strong>Beachfront Yoga</strong><br>Awaken your body with a rejuvenating yoga session overlooking the Pacific Ocean.</li>  <li>
-<strong>8:00am</strong> – <strong>Breakfast</strong><br>Indulge in a nourishing breakfast to start the day<br>
-</li> 
-<li>
-<strong>9:30-10:30am - Free time</strong><br>Take this hour to laze over breakfast, journal, swim, explore, or just unwind with the breathtaking views. You may also book a massage for deep relaxation.<br>
-</li>
+   </div>
+   <!-- Navigation Buttons -->
+   <div class="controls">
+     <button class="prevBtn" onclick="previous()"><i class="fa fa-caret-left" aria-hidden="true"></i></button>
+     <button class="nextBtn" onclick="next()"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
+   </div>
+   
+   <!-- Text Display -->
+   <div class="text-display" id="text-display">
+     <!-- Day 1 Container-->
+     <div class="Days Day-1 --active">
+           <h4 class = "days-h4">Day 1</h4>
+          <h5 class = "days-h5">Arrival, Welcome Circle, & First Adventure</h5>
+      
+         <ul>  
+            <li>
+               <strong>12:00pm</strong> – For <strong>Early Arrivals </strong><br>Arrive early and start your relaxation journey. Unwind by the pool, book a rejuvenating massage, or take a stroll around the beautiful villa grounds.<br>
+             </li>
+           
+            <li>
+            <strong>3:00pm</strong> – <strong>Official Retreat Start</strong><br>Check-in, settle into your luxury accommodation, and soak in the tranquil surroundings.<br>
+             </li> 
+           
+              <li>
+               <strong>4:30pm</strong> – <strong>Welcome Circle &amp; Intention Setting</strong><br>Meet your fellow retreat participants for a relaxed welcome circle. Set your intentions for the retreat while enjoying a healthy drink and snack.<br>
+            </li>  
+         <span class ="more">
+             <li>
+             <strong>6:00pm</strong> – <strong>Introductory Yoga Session</strong><br>
+             Ease into your first yoga practice, focusing on gentle stretching and breathing to prepare for the days ahead.<br>
+             </li>
+      
+             <li>
+               <strong>7:00pm</strong> – <strong>Dinner by the Pool</strong><br>Enjoy a delicious and nourishing meal with new friends, followed by some free time to rest and recharge.
+              </li>
+           </span>
+          </ul>
+          
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id="myBtn">Read more</button>
+        </div>
+        
+     
+       <!-- Day 2 Container-->
+             <div class="Days Day-2 --active">
+           <h4 class = "days-h4">Day 2</h4>
+          <h5 class = "days-h5">Exploring Lanzarote’s Beauty & Mindset Mastery</h5>
+      
+        <ul> 
+      <li>
+       <strong>7:00am</strong> – <strong>Wake Up To Yoga At Dawn</strong> <br>Start your day with an energizing yoga session overlooking the stunning surroundings.
+       <br>
+      </li> 
+   
+      <li>
+       <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong> <br>Indulge in a nutritious breakfast with fresh, locally sourced ingredients.
+       <br>
+      </li> 
+   
+      <li>
+       <strong>9:00am </strong> – <strong>Boat Charter Excursion</strong> <br>Set sail on a luxury boat charter along Lanzarote’s breathtaking coastline.
+       <br>
+      </li> 
+          
+           <li>
+      <strong>1:00pm </strong> – <strong>Lunch</strong><br>Enjoy a relaxing lunch either back at the villa or at a scenic spot nearby.<br>
+      </li>
+          <span class = "more">
+     
+   
+      <li>
+       <strong>2:00pm </strong> – <strong>Massage or Chill</strong><br>Take some downtime to reflect, unwind, or treat yourself to a relaxing massage.<br>
+       </li>
+   
+       <li>
+           <strong>4:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Get your blood pumping with a high-energy bootcamp session, designed to challenge and invigorate you.
+           <br>
+           </li>
+   
+           <li>
+               <strong>6:00pm</strong> – <strong>Dinner by the Pool</strong><br>Savor a nutritious meal in a beautiful setting with your retreat community.<br>
+               </li>
+   
+               <li>
+                   <strong>8:00pm</strong> – <strong>Life Coaching Module: Goal Focus</strong><br>Learn how to set powerful, aligned goals with actionable steps during this transformative coaching session.
+                   <br>
+                   </li>
+   
+                   <li>
+                       <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Enjoy some quiet time to reflect on the day, journal, or simply rest.<br>
+                       </li>
+   
+      
+          </span>
+      </ul>
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+        </div>
+         <!-- Day 3 Container-->
+           <div class="Days Day-3 --active">
+           <h4 class = "days-h4">Day 3</h4>
+          <h5 class = "days-h5">Connection with Nature & Personal Growth</h5>
+      
+      <ul>
+      <li>
+      <strong>7:00am</strong> – <strong>Sunrise Yoga</strong><br>Wake up your body with a peaceful yoga session to greet the morning sun.</li>
+   
+       <li>
+           <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong><br>Enjoy a nourishing breakfast to fuel your day.
+       </li>
+       
+   
+       <li>
+           <strong>9:00am </strong> – <strong>Volcano Trek to Volcán El Cuervo</strong><br>Explore Lanzarote’s volcanic landscape with a guided trek to Volcán El Cuervo.
+       </li>
     <span class = "more">
-<li>
-<strong>10.30-12:30pm</strong> – <strong>Chakra Workshop</strong><br>Identify and balance your 7 chakras in this exploratory workshop. We will take some refreshment breaks throughout.<br>
-</li> 
-<li>
-<strong>12:30pm- 1:00pm - Breathwork session</strong><br>
-</li> 
-<li>
-<strong>1-2.30pm</strong> – <strong>Lunch Break</strong>
-</li>  
-<li>
-<strong>2:30-4.30pm</strong> – <strong>Lighthouse Walk Excursion</strong><br>Embark on a scenic walk to the iconic Byron Bay Lighthouse and soak in the panoramic views.</li> 
-<li>
-<strong>4.30pm </strong>– <strong>&nbsp;Free Time</strong><br>Return to our retreat centre and relax and unwind before dinner<br><br><strong>7:00pm</strong> – <strong>Dinner out in Byron Bay</strong><br>Enjoy another fabulous healthy inspired meal with your new retreat friends.</li>
-    </span>
-</ul>
-    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
-            <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
-  </div>
-      <!-- Day 3 Container-->
-     <div class="Days Day-3 --active">
-     <h4 class = "days-h4">Day 3</h4>
-    <h5 class = "days-h5">Sunrise yoga, watercolour session, closing circle, video testimonials</h5>
+      <li>
+      <strong>1:00pm</strong> –<strong> Lunch</strong><br>Refuel with a healthy meal, either back at the villa or on the go.<br>
+      </li>
+   
+       <li>
+           <strong>2:00pm</strong> – <strong>Massage or Chill</strong><br>Relax with a massage or take some time to reflect by the pool.
+       </li>
+       
+       <li>
+           <strong>4:00pm </strong> – <strong> Micro Bootcamp Class</strong><br>Reignite your energy with a quick but intense workout session.
+       </li>
+   
+       <li>
+           <strong>6:00pm </strong> – <strong> Dinner by the Pool</strong><br>Enjoy a well-deserved dinner with your fellow participants.
+       </li>
+   
+       <li>
+           <strong>8:00pm </strong> – <strong> Life Coaching Module: Stress Solution</strong><br>Learn how to understand, manage, and reduce stress in this empowering coaching session.
+   
+       </li>
+   
+       <li>
+           <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Wind down with personal time before preparing for the next adventure.
+       </li>
+   
+        </span>
+      </ul>
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+        </div>
+     
+     
+     <!-- add more sections here -->
+      <!-- Day 4 Container-->
+     <div class="Days Day-4 --active">
+           <h4 class = "days-h4">Day 4</h4>
+          <h5 class = "days-h5">Adventure & Reflection</h5>
+      
+         <ul>  
+            <li>
+               <strong>7:00am</strong> –<strong>Early Arrivals </strong><br>Wake Up To Yoga At Dawn
+   Start the day with a peaceful, grounding yoga practice to center yourself.<br>
+             </li>
+           
+            <li>
+            <strong>8:00am</strong> – <strong>Cliff Walk Excursion</strong><br>Embark on a scenic cliff walk for stunning views of the island and coastline.<br>
+             </li> 
+           
+              <li>
+               <strong>1:00pm</strong> – <strong>Lunch</strong><br>Enjoy a healthy lunch at the villa or a nearby restaurant.<br>
+            </li>  
+             <li>
+             <strong>2:00pm</strong> – <strong>Massage or Chill</strong><br>
+        Relax with a massage or enjoy some quiet time to reflect and recharge.<br>
+             </li>
+         <span class ="more">
+      
+             <li>
+               <strong>4:00pm </strong> – <strong>Dinner by the Pool</strong><br>Relax and enjoy a nourishing dinner.
+              </li>
+           
+             <li>
+               <strong>6:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Another energizing session to keep you on track with your fitness goals.
+              </li>
+             <li>
+               <strong>8:00pm  </strong> – <strong> Life Coaching Module: Mindset Matrix</strong><br>Dive into understanding how your brain works and how to create lasting change.
+              </li>
+             <li>
+               <strong>9:00pm </strong> – <strong> Free Time/Bed</strong><br>Unwind and rest for another exciting day ahead.
+              </li>
+           </span>
+          </ul>
+          
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id="myBtn">Read more</button>
+        </div>
+     
+     
+      <!-- Day 5 Container-->
+             <div class="Days Day-5 --active">
+           <h4 class = "days-h4">Day 5</h4>
+          <h5 class = "days-h5">Exploring Lanzarote & Personal Transformation</h5>
+      
+        <ul> 
+      <li>
+       <strong>7:00am</strong> – <strong>Wake Up To Yoga At Dawn</strong> <br>Start your day with a refreshing yoga session, focusing on mindfulness and relaxation.
+       <br>
+      </li> 
+   
+      <li>
+       <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong> <br>Fuel up with a healthy breakfast before today’s activities.
+       <br>
+      </li> 
+   
+      <li>
+       <strong>9:00am </strong> – <strong> Stand-Up Paddleboarding at Puerto del Carmen</strong> <br>Enjoy a fun-filled water adventure with paddleboarding in the crystal-clear waters of Puerto del Carmen.
+       <br>
+      </li> 
+          
+           <li>
+      <strong>1:00pm </strong> – <strong>Lunch</strong><br>Lunch will be served either at the villa or a local restaurant.<br>
+      </li>
+          <span class = "more">
+     
+   
+      <li>
+       <strong>2:00pm </strong> – <strong>Massage or Chill</strong><br>Take some time to unwind or enjoy a soothing massage.<br>
+       </li>
+   
+       <li>
+           <strong>4:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Finish the day with an energizing fitness session.
+           <br>
+           </li>
+   
+           <li>
+               <strong>6:00pm</strong> – <strong>Dinner by the Pool</strong><br>Enjoy a delicious dinner with your retreat family.<br>
+               </li>
+   
+               <li>
+                   <strong>8:00pm</strong> – <strong>Life Coaching Module:  Life Work Balance</strong><br>Learn how to balance your personal, professional, and wellness goals for a fulfilling life.
+                   <br>
+                   </li>
+   
+                   <li>
+                       <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Relax and rest up for your final day.<br>
+                       </li>
+   
+      
+          </span>
+      </ul>
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+        </div>
+     
+     
+      <!-- Day 6 Container-->
+           <div class="Days Day-6 --active">
+           <h4 class = "days-h4">Day 6</h4>
+          <h5 class = "days-h5">Reflection & Farewell</h5>
+      
+      <ul>
+      <li>
+      <strong>7:00am</strong> – <strong>Sunrise Yoga</strong><br>Begin your last day with a peaceful yoga practice to center your mind.</li>
+   
+       <li>
+           <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong><br>Enjoy one last breakfast together in the serene villa setting.
+       </li>
+       
+   
+       <li>
+           <strong>9:00am </strong> – <strong>Final Group Activity: Reflection & Goal Setting</strong><br>Reflect on your transformation and set your intentions for the future with actionable goals.
+       </li>
+         <li>
+      <strong>12:00am</strong> –<strong>Closing Circle & Farewell</strong><br>Join us for a final reflection circle where we share insights and experiences before you depart.
+   <br>
+      </li>
+    <span class = "more">
+         <li>
+      <strong>12:00am</strong> –<strong>Closing Circle & Farewell</strong><br>Join us for a final reflection circle where we share insights and experiences before you depart.
+   <br>
+      </li>
+      
+      <li>
+      <strong>1:00pm</strong> –<strong> Departure
+   </strong><br>Enjoy your final moments in Lanzarote, feeling refreshed, empowered, and ready to implement the changes you've set in motion.<br>
+      </li>
+   
+        </span>
+      </ul>
+          <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                  <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
+        </div>
+     
+        
+        
+   </section>
+   
+   
+   
+   
+   
+   
+    <!-- FOR MOBILE -->
+   
+     <section class="mobile-carousel-container">
+        <!-- DAY 1 MOBILE -->
+        <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item --expanded" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f1186ed848f0a28f4908.jpeg');"> <p class="mobile-days">Day 1</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display --visible">
+            <h4 class = "days-h4 h4mobile">Day 1</h4>
+            <h5 class = "days-h5">Arrival, Welcome Circle, & First Adventure</h5>
+            <!-- Additional content for Day 1 -->
+            <ul>  
+              <li>
+                 <strong>12:00pm</strong> – For <strong>Early Arrivals </strong><br>Arrive early and start your relaxation journey. Unwind by the pool, book a rejuvenating massage, or take a stroll around the beautiful villa grounds.<br>
+               </li>
+             
+              <li>
+              <strong>3:00pm</strong> – <strong>Official Retreat Start</strong><br>Official Retreat Start</strong><br>Check-in, settle into your luxury accommodation, and soak in the tranquil surroundings.<br>
+               </li> 
+             
+                <li>
+                 <strong>4:30pm</strong> – <strong>Welcome Circle &amp; Intention Setting</strong><br>Meet your fellow retreat participants for a relaxed welcome circle. Set your intentions for the retreat while enjoying a healthy drink and snack.<br>
+              </li>  
+           <span class ="more">
+               <li>
+               <strong>6:00pm</strong> – <strong>Introductory Yoga Session</strong><br> Ease into your first yoga practice, focusing on gentle stretching and breathing to prepare for the days ahead.<br>
+               </li>
+        
+               <li>
+                 <strong>7:00pm</strong> – <strong>Dinner by the Pool</strong><br>Enjoy a delicious and nourishing meal with new friends, followed by some free time to rest and recharge.
+                </li>
+             </span>
+            </ul>
+            
+            <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                    <button class = "readmore rm-mobile" onclick="readmore()" id="myBtn">Read more</button>
+          </div>
+          </div>
+     
+      <!-- DAY 2 MOBILE -->
+      <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f20b4071a926f89ff130.png');"> <p class="mobile-days">Day 2</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display">
+            <h4 class = "days-h4 h4mobile">Day 2</h4>
+            <h5 class = "days-h5">Exploring Lanzarote’s Beauty & Mindset Mastery</h5>
+            <!-- Additional content for Day 2 -->
+            <ul> 
+               <li>
+                   <strong>7:00am</strong> – <strong>Wake Up To Yoga At Dawn</strong> <br>Start your day with an energizing yoga session overlooking the stunning surroundings.
+                   <br>
+                  </li> 
+                  
+                  <li>
+                   <strong>9:00am </strong> – <strong>Boat Charter Excursion</strong> <br>Set sail on a luxury boat charter along Lanzarote’s breathtaking coastline.
+                   <br>
+                  </li> 
+   
+                  <li>
+                   <strong>1:00pm </strong> – <strong>Lunch</strong><br>Enjoy a relaxing lunch either back at the villa or at a scenic spot nearby.<br>
+                   </li>
+                  <span class = "more">
+                   <li>
+                       <strong>2:00pm </strong> – <strong>Massage or Chill</strong><br>Take some downtime to reflect, unwind, or treat yourself to a relaxing massage.<br>
+                       </li>
+   
+             <li>
+           <strong>4:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Get your blood pumping with a high-energy bootcamp session, designed to challenge and invigorate you.
+           <br>
+           </li>
+   
+               <li>
+               <strong>6:00pm</strong> – <strong>Dinner by the Pool</strong><br>Savor a nutritious meal in a beautiful setting with your retreat community.<br>
+               </li>
+   
+             <li>
+                   <strong>8:00pm</strong> – <strong>Life Coaching Module: Goal Focus</strong><br>Learn how to set powerful, aligned goals with actionable steps during this transformative coaching session.
+                   <br>
+                   </li>
+   
+               <li>
+                       <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Enjoy some quiet time to reflect on the day, journal, or simply rest.<br>
+                       </li>
+                  </span>
+              </ul>
+              <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+              <button class = "readmore rm-mobile" onclick="readmore()" id = "myBtn1">Read more</button>
+          </div>
+        </div>
+     
+      <!-- DAY 3 MOBILE -->
+    <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f2634071a990c49ff23d.jpeg');"> <p class="mobile-days">Day 3</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display">
+            <h4 class = "days-h4 h4mobile">Day 3</h4>
+            <h5 class = "days-h5">Connection with Nature & Personal Growth</h5>
+            <!-- Additional content for Day 3 -->
+            <ul>
+               <li>
+                   <strong>7:00am</strong> – <strong>Sunrise Yoga</strong><br>Wake up your body with a peaceful yoga session to greet the morning sun.</li>
+                   <li>
+   
+             
+       <li>
+           <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong><br>Enjoy a nourishing breakfast to fuel your day.
+       </li>
+   
+       <li>
+           <strong>9:00am </strong> – <strong>Volcano Trek to Volcán El Cuervo</strong><br>Explore Lanzarote’s volcanic landscape with a guided trek to Volcán El Cuervo.
+       </li>
+   
+             
+               <span class = "more">
+   
+                   <li>
+                       <strong>1:00pm</strong> –<strong> Lunch</strong><br>Refuel with a healthy meal, either back at the villa or on the go.<br>
+               </li>
+   
+   
+               <li>
+                   <strong>2:00pm</strong> – <strong>Massage or Chill</strong><br>Relax with a massage or take some time to reflect by the pool.
+               </li>
+   
+               <li>
+           <strong>4:00pm </strong> – <strong> Micro Bootcamp Class</strong><br>Reignite your energy with a quick but intense workout session.
+       </li>
+   
+       <li>
+           <strong>6:00pm </strong> – <strong> Dinner by the Pool</strong><br>Enjoy a well-deserved dinner with your fellow participants.
+       </li>
+   
+       <li>
+           <strong>8:00pm </strong> – <strong> Life Coaching Module: Stress Solution</strong><br>Learn how to understand, manage, and reduce stress in this empowering coaching session.
+   
+       </li>
+   
+       <li>
+           <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Wind down with personal time before preparing for the next adventure.
+       </li>
+   
+                </span>
+              </ul>
+                  <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                          <button class = "readmore rm-mobile" onclick="readmore()" id = "myBtn1">Read more</button>
+                
+          </div>
+        </div>
+   
+   
+     <!-- DAY 4 MOBILE -->
+      <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f506f5b7293c845f5fe2.jpeg');"> <p class="mobile-days">Day 4</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display">
+            <h4 class = "days-h4 h4mobile">Day 4</h4>
+            <h5 class = "days-h5">Adventure & Reflection</h5>
+            <!-- Additional content for Day 4 -->
+            <ul> 
+              <li>
+               <strong>7:00am</strong> –<strong>Early Arrivals </strong><br>Wake Up To Yoga At Dawn
+   Start the day with a peaceful, grounding yoga practice to center yourself.<br>
+             </li>
+                  
+                        <li>
+            <strong>8:00am</strong> – <strong>Cliff Walk Excursion</strong><br>Embark on a scenic cliff walk for stunning views of the island and coastline.<br>
+             </li> 
+   
+                   <li>
+               <strong>1:00pm</strong> – <strong>Lunch</strong><br>Enjoy a healthy lunch at the villa or a nearby restaurant.<br>
+            </li>  
+              
+                 <li>
+             <strong>2:00pm</strong> – <strong>Massage or Chill</strong><br>
+        Relax with a massage or enjoy some quiet time to reflect and recharge.<br>
+             </li>
+                  <span class = "more">
+               <li>
+               <strong>4:00pm </strong> – <strong>Dinner by the Pool</strong><br>Relax and enjoy a nourishing dinner.
+              </li>
+   
+              <li>
+               <strong>6:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Another energizing session to keep you on track with your fitness goals.
+              </li>
+   
+              <li>
+               <strong>8:00pm  </strong> – <strong> Life Coaching Module: Mindset Matrix</strong><br>Dive into understanding how your brain works and how to create lasting change.
+              </li>
+   
+            <li>
+               <strong>9:00pm </strong> – <strong> Free Time/Bed</strong><br>Unwind and rest for another exciting day ahead.
+              </li>
+                  </span>
+              </ul>
+              <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+              <button class = "readmore rm-mobile" onclick="readmore()" id = "myBtn1">Read more</button>
+          </div>
+        </div>
+   
+        <!-- DAY 5 MOBILE -->
+        <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f584397d9a6bfc388ab0.jpeg');"> <p class="mobile-days">Day 5</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display">
+            <h4 class = "days-h4 h4mobile">Day 5</h4>
+            <h5 class = "days-h5">Exploring Lanzarote & Personal Transformation</h5>
+            <!-- Additional content for Day 1 -->
+            <ul>  
+               <li>
+       <strong>7:00am</strong> – <strong>Wake Up To Yoga At Dawn</strong> <br>Start your day with a refreshing yoga session, focusing on mindfulness and relaxation.
+       <br>
+      </li> 
+             
+               <li>
+       <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong> <br>Fuel up with a healthy breakfast before today’s activities.
+       <br>
+      </li> 
+             
+            
+      <li>
+       <strong>9:00am </strong> – <strong> Stand-Up Paddleboarding at Puerto del Carmen</strong> <br>Enjoy a fun-filled water adventure with paddleboarding in the crystal-clear waters of Puerto del Carmen.
+       <br>
+      </li> 
+                <li>
+      <strong>1:00pm </strong> – <strong>Lunch</strong><br>Lunch will be served either at the villa or a local restaurant.<br>
+      </li>
+           <span class ="more">
+              <li>
+       <strong>2:00pm </strong> – <strong>Massage or Chill</strong><br>Take some time to unwind or enjoy a soothing massage.<br>
+       </li>
+        
+                <li>
+           <strong>4:00pm</strong> – <strong>Micro Bootcamp Class</strong><br>Finish the day with an energizing fitness session.
+           <br>
+           </li>
+             
+               <li>
+               <strong>6:00pm</strong> – <strong>Dinner by the Pool</strong><br>Enjoy a delicious dinner with your retreat family.<br>
+               </li>
+   
+                <li>
+                   <strong>8:00pm</strong> – <strong>Life Coaching Module:  Life Work Balance</strong><br>Learn how to balance your personal, professional, and wellness goals for a fulfilling life.
+                   <br>
+                   </li>
+             
+                <li>
+                       <strong>9:00pm</strong> – <strong> Free Time/Bed</strong><br>Relax and rest up for your final day.<br>
+                       </li>
+             </span>
+            </ul>
+            
+            <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                    <button class = "readmore rm-mobile" onclick="readmore()" id="myBtn">Read more</button>
+          </div>
+          </div>
+   
+   
+      <!-- DAY 6 MOBILE -->
+    <div class="mobile-carousel-wrapper">
+          <div class="mobile-carousel-item" style="background-image: url('https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6772f5d4a28a50d037e67b67.jpeg');"> <p class="mobile-days">Day 6</p>
+            <button class="expand-btn"><i class="fa-solid fa-angle-down"></i></button>
+          </div>
+          <div class="mobile-text-display">
+            <h4 class = "days-h4 h4mobile">Day 6</h4>
+            <h5 class = "days-h5">Reflection & Farewell</h5>
+            <!-- Additional content for Day 6 -->
+            <ul>
+                 <li>
+      <strong>7:00am</strong> – <strong>Sunrise Yoga</strong><br>Begin your last day with a peaceful yoga practice to center your mind.</li>
+                    <li>
+           <strong>8:00am</strong> – <strong>Breakfast by the Pool</strong><br>Enjoy one last breakfast together in the serene villa setting.
+       </li>
+   
+     <li>
+           <strong>9:00am </strong> – <strong>Final Group Activity: Reflection & Goal Setting</strong><br>Reflect on your transformation and set your intentions for the future with actionable goals.
+       </li>
+               
+               <span class = "more">
+   
+                  <li>
+      <strong>12:00am</strong> –<strong>Closing Circle & Farewell</strong><br>Join us for a final reflection circle where we share insights and experiences before you depart.
+   <br>
+      </li>
+   
+                <li>
+      <strong>1:00pm</strong> –<strong> Departure
+   </strong><br>Enjoy your final moments in Lanzarote, feeling refreshed, empowered, and ready to implement the changes you've set in motion.<br>
+      </li>
+                </span>
+              </ul>
+                  <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
+                          <button class = "readmore rm-mobile" onclick="readmore()" id = "myBtn1">Read more</button>
+                
+          </div>
+        </div>
+     </section>
 
-<ul>
-<li>
-<strong>7:00-8:00am</strong> – <strong>Beachfront Yoga</strong><br>Start the day refreshed with a morning yoga session by the ocean.</li>
-<li>
-<strong>8:00am</strong> – <strong>Breakfast</strong><br>A delightful breakfast awaits to fuel your day. Enjoy a relaxing morning before departing, with check-out at 11am.</li>
-<li>
-<strong>11:00am </strong>-<strong> Official check out</strong><br>Bring bags to store at reception and then join us whilst we continue on with some activities.</li> 
-<li>
- <span class = "more">
-<strong>11:00-12.30pm</strong> –<strong> Watercolor &amp; Affirmations Workshop</strong><br>Connect with your inner creativity and express your affirmations through a mindful watercolor painting session. Guided meditation included<strong>.</strong>
-</li>
-<li>
-<strong>12.30-1.30pm</strong> – Video testimonials. A chance to share your experiences on camera so others are inspired to join us next time!</li> 
-<li>
-<strong>1.30pm</strong> – <strong>Closing circle &amp; Retreat end.</strong><br>Reflect on your experiences during the retreat, share insights, and say goodbye to newfound friends.</li>
-  </span>
-</ul>
-    <div class="collapsed-text__text-overlapper collapsed-text__text-overlapper--white"></div>
-            <button class = "readmore" onclick="readmore()" id = "myBtn1">Read more</button>
-  </div>
+
+
+     <div class="grid-container gallery-desktop">
+      <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6764337e7e62116b5eac071d.jpeg" alt="Image 1" class="item1">
+      <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6754273a29695a55016f0997.jpeg" alt="Image 2" class="item2">
+      <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/67643339cdd6a8f1ba44a017.jpeg" alt="Image 3" class="item3">
+      <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6753442ef875127503c36c1f.png" alt="Image 4" class="item4">
+      <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6741e6f17fc15ffd1f217d25.png" alt="Image 5" class="item5">
+      
+    <!-- The images in the gallery section is up to 10 find the remaining photos' links in the footer tracking -->
+       
+       <div class="item5">
+         <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6741e6f17fc15ffd1f217d25.png" alt="more-photos-img">
+         <button id="morePhotosBtn">More Photos</button>
+       </div>
+     </div>
+   
+     <div class="gallery-mobile">
+       <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6764337e7e62116b5eac071d.jpeg" alt="Image 1">
+       <button id="mobileMorePhotosBtn">More Photos</button>
+     </div>
+   
+     <div class="carousel" id="carousel">
+       <button class="close" id="closeCarousel">X</button>
+       <img src="https://storage.googleapis.com/msgsndr/iA0Y7z8cuIcBz11O96F7/media/6764337e7e62116b5eac071d.jpeg" alt="Carousel Image" id="carouselImage">
+        <div id="imageCounter">1/13</div>
+          <div class="controls">
+     <button  id="prev"><i class="fa fa-caret-left" ></i></button>
+     <button id="next" ><i class="fa fa-caret-right" ></i></button>
+   </div>
+     </div>
+   
+   
+   
+   
+
 
 <script src = "smooth.js"></script>
 
